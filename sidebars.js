@@ -47,6 +47,7 @@ module.exports = {
             "components/cloud-console/manage-organization/organization-settings",
             "components/cloud-console/manage-organization/manage-users",
             "components/cloud-console/manage-organization/view-organization-activity",
+            "components/cloud-console/manage-organization/usage-history",
             "components/cloud-console/manage-organization/update-billing-reservations",
             "components/cloud-console/manage-organization/switch-organization",
           ],
@@ -169,7 +170,7 @@ module.exports = {
   "APIs & Clients": [
     "apis-clients/overview",
     {
-      "APIs": [
+      APIs: [
         "apis-clients/public-api",
         "apis-clients/grpc",
         require("./docs/apis-clients/tasklist-api/sidebar-schema"),
@@ -177,27 +178,27 @@ module.exports = {
       ],
     },
     {
-      "Clients": [
+      Clients: [
         {
           "Java client": [
             "apis-clients/java-client/index",
             "apis-clients/java-client/job-worker",
             "apis-clients/java-client/logging",
             "apis-clients/java-client/testing",
-              {
-                Examples: [
-                  "apis-clients/java-client-examples/index",
-                  "apis-clients/java-client-examples/process-deploy",
-                  "apis-clients/java-client-examples/process-instance-create",
-                  "apis-clients/java-client-examples/process-instance-create-nonblocking",
-                  "apis-clients/java-client-examples/process-instance-create-with-result",
-                  "apis-clients/java-client-examples/job-worker-open",
-                  "apis-clients/java-client-examples/data-pojo",
-                  "apis-clients/java-client-examples/cluster-topology-request",
-                  ],
-              },
-            ],
-          },
+            {
+              Examples: [
+                "apis-clients/java-client-examples/index",
+                "apis-clients/java-client-examples/process-deploy",
+                "apis-clients/java-client-examples/process-instance-create",
+                "apis-clients/java-client-examples/process-instance-create-nonblocking",
+                "apis-clients/java-client-examples/process-instance-create-with-result",
+                "apis-clients/java-client-examples/job-worker-open",
+                "apis-clients/java-client-examples/data-pojo",
+                "apis-clients/java-client-examples/cluster-topology-request",
+              ],
+            },
+          ],
+        },
         {
           "Go client": [
             "apis-clients/go-client/index",
@@ -206,8 +207,8 @@ module.exports = {
         },
         {
           "CLI client": [
-          "apis-clients/cli-client/index",
-          "apis-clients/cli-client/get-started",
+            "apis-clients/cli-client/index",
+            "apis-clients/cli-client/get-started",
           ],
         },
         {
@@ -225,7 +226,7 @@ module.exports = {
       ],
     },
   ],
- 
+
   Reference: [
     "reference/overview",
     {
@@ -287,9 +288,9 @@ module.exports = {
     "reference/supported-environments",
   ],
   "Self-Managed": [
-      "self-managed/overview",
-      {
-      "Zeebe": [
+    "self-managed/overview",
+    {
+      Zeebe: [
         "self-managed/zeebe-deployment/index",
         {
           "Local installation": [
@@ -340,7 +341,7 @@ module.exports = {
           ],
         },
       ],
-      "Operate": [
+      Operate: [
         "self-managed/operate-deployment/install-and-start",
         "self-managed/operate-deployment/configuration",
         "self-managed/operate-deployment/data-retention",
@@ -348,29 +349,31 @@ module.exports = {
         "self-managed/operate-deployment/importer-and-archiver",
         "self-managed/operate-deployment/authentication",
       ],
-      "Tasklist": [
+      Tasklist: [
         "self-managed/tasklist-deployment/install-and-start",
         "self-managed/tasklist-deployment/configuration",
         "self-managed/tasklist-deployment/authentication",
       ],
       IAM: [
         "self-managed/iam/what-is-iam",
-          {
-            "Getting started": [
-              {
-                "Running IAM with Docker": [
-                  "self-managed/iam/getting-started/docker/setup-environment",
-                  "self-managed/iam/getting-started/docker/start-iam",
-                  "self-managed/iam/getting-started/docker/accessing-the-ui",
-                ]
-              }
-            ],
-          }, {
-            "Deployment": [
-              "self-managed/iam/deployment/configuration-variables",
-              "self-managed/iam/deployment/making-iam-production-ready",
-            ],
-          }, {
+        {
+          "Getting started": [
+            {
+              "Running IAM with Docker": [
+                "self-managed/iam/getting-started/docker/setup-environment",
+                "self-managed/iam/getting-started/docker/start-iam",
+                "self-managed/iam/getting-started/docker/accessing-the-ui",
+              ],
+            },
+          ],
+        },
+        {
+          Deployment: [
+            "self-managed/iam/deployment/configuration-variables",
+            "self-managed/iam/deployment/making-iam-production-ready",
+          ],
+        },
+        {
           "Third-Party Libraries": [
             "self-managed/iam/third-party-libraries/backend-third-party-libraries",
             "self-managed/iam/third-party-libraries/frontend-third-party-libraries",
